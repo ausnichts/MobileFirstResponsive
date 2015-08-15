@@ -1,0 +1,116 @@
+/* Media Queries - Retina Display */
+
+@media (-webkit-min-device-pixel-ratio: 2) {
+    .hatena-module-search-box .search-module-button {
+        background: transparent url(http://blog.hatena.ne.jp/images/theme/search@2x.png) no-repeat right center;
+        background-size: 20px 20px;
+    }
+}
+
+/* Media Queries - Tablet */
+
+@media (min-width: 768px) {
+	
+	#title {
+		width: @1col-max-width-wide;
+	}
+	
+	#blog-description {
+		width: @1col-max-width-wide;
+	}
+	
+	#content {
+		padding-top: 40px;
+	}
+	
+	#content-inner {
+		width: @1col-max-width-wide;
+	}
+	#menubar {
+		background: @background;
+		label {
+			display: none;
+		}
+		ul {
+			width: @1col-max-width-wide;
+	  	transition: none;
+	  	margin: 0 auto;
+  		padding: 0;
+  		list-style: none;
+			li {
+				display: inline-block;
+				padding: 10px 0;
+	  		a {
+  				color: @text;
+					display: inline-block;
+  				padding: 0 15px;
+  				border-right: 1px solid @text;
+		  	}
+		  	&:first-child a {
+		  		border-left: 1px solid @text;
+		  	}
+			}
+		}
+		#trigger + ul{
+  		max-height: 100%;
+		}
+	}
+}
+
+@media (min-width: 1024px) {
+
+	#blog-title-inner {
+		height: @header-height * 2;
+	}
+	.header-image-enable {
+		#blog-title {
+		}
+		#blog-title #blog-title-inner {
+			height: @header-height * 2;
+		}
+	}
+
+	#title {
+		width: @2col-width;
+		max-width: @2col-max-width;
+		a {
+			line-height: @header-height * 2;
+		}
+	}
+	#blog-description {
+		width: @2col-width;
+		max-width: @2col-max-width;
+		top: @header-height * 2 * 0.8;
+	}
+	
+	#content {
+		padding-top: 60px;
+	}
+	
+	#content-inner {
+		width: @2col-width;
+		max-width: @2col-max-width;
+	}
+	#menubar {
+		ul {
+		width: @2col-width;
+		max-width: @2col-max-width;
+		}
+	}
+
+	#wrapper {
+		float: left;
+    	width: 100%;
+    	margin-right: -300px;
+    	#main {
+    		margin-right: 300px;
+    		padding-right: 5%;
+    	}
+	}
+
+	#box2 {
+		float: right;
+   	width: 300px;
+	}
+	
+}

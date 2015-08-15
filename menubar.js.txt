@@ -1,0 +1,32 @@
+<script>
+var categories = document.querySelectorAll('.hatena-module-category li');
+var target = document.getElementById('blog-title');
+if ( categories.length && target ) {
+	var newDiv = document.createElement('div');
+	newDiv.setAttribute('id', 'menubar');
+	
+	var newEl = document.createElement('label');
+	newEl.setAttribute('for', 'trigger');
+	newDiv.appendChild(newEl);
+	
+	newEl = document.createElement('input');
+	newEl.setAttribute('id', 'trigger');
+	newEl.setAttribute('type', 'checkbox');
+	newDiv.appendChild(newEl);
+
+	var newUl = document.createElement('ul');
+	var home = document.createElement('li');
+	home.innerHTML = '<a href="http://ausnichts.hatenadiary.jp/" title="ホーム">ホーム</a>';
+	newUl.appendChild(home);
+	for (var i=0,len=categories.length; i<len; ++i) {
+		var category = categories[i].cloneNode(true);
+		category.innerHTML = category.innerHTML.replace(/\s\([0-9]\)/g, '');
+		newUl.appendChild(category);   
+	}
+	var about = document.createElement('li');
+	about.innerHTML = '<a href="http://ausnichts.hatenadiary.jp/about" title="About">About</a>';
+	newUl.appendChild(about);
+	newDiv.appendChild(newUl);
+	target.appendChild(newDiv);
+}
+</script>
