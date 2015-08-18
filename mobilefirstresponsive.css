@@ -504,7 +504,7 @@ ol {
 }
 #blog-title-inner {
   height: 100px;
-  background-color: #2f74ce;
+  background-color: #457fc1;
 }
 /* ヘッダ画像を設定したとき */
 .header-image-enable #blog-title #blog-title-inner {
@@ -729,49 +729,13 @@ ol {
   font-size: 150%;
 }
 .entry-content h3 {
-  position: relative;
   font-size: 140%;
-  border-left: 3px solid #ffa500;
-  padding: 10px 0 0 5px;
-}
-.entry-content h3:before {
-  background: #ffa500;
-  content: "";
-  height: 3px;
-  left: -10px;
-  position: absolute;
-  top: 7px;
-  width: 200px;
 }
 .entry-content h4 {
   font-size: 130%;
-  position: relative;
-  border-left: 2px solid #ffa500;
-  padding: 10px 0 0 5px;
-}
-.entry-content h4:before {
-  background: #ffa500;
-  content: "";
-  height: 2px;
-  left: -10px;
-  position: absolute;
-  top: 7px;
-  width: 160px;
 }
 .entry-content h5 {
   font-size: 110%;
-  position: relative;
-  border-left: 1px solid #ffa500;
-  padding: 10px 0 0 5px;
-}
-.entry-content h5:before {
-  background: #ffa500;
-  content: "";
-  height: 1px;
-  left: -10px;
-  position: absolute;
-  top: 7px;
-  width: 120px;
 }
 .entry-content h6 {
   font-size: 100%;
