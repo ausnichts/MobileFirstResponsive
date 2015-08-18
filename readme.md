@@ -1,17 +1,17 @@
-# Boilerplate
+# Mobile-First Responsive
 
-Boilerplate は、はてなブログのデザインCSSカスタマイズの土台に適したデザインテーマです。
+Boilerplate をベースにしたはてなブログのデザインテーマです。
 
 はてなブログの必要最小限の見た目が調整されています。このテーマをもとにしてCSSを書くと比較的楽にデザインテーマが作れます。  
-「オリジナルテーマの制作にチャレンジしたいけど、0から作るのが大変」という方は、このデザインテーマをもとにしてCSSを書くと比較的楽にテーマが作れます。
 
 # 構成
 
-LESSで書かれています。LESSの知識のある方は、`boilerplate.less`を編集してください。LESSを使わない場合は`boilerplate.css`を編集してください。
+mobilefirstresponsive.less
+mobilefirstresponsive.css
 
 ファイルの概要は下記のとおりです。
 
-* boilerplate.less
+* mobilefirstresponsive.less
     * 基本となるスタイルが書かれているLESSファイルです。加えて、下記の4つのLESSファイルを読み込んでいます。
 * _mixin.less
     * ミックスインです。主にCSS3でベンダープレフィックスが含まれるプロパティを簡単に記述できるようにしています。
