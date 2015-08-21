@@ -408,13 +408,13 @@ ul, ol {
     
     ul {
     	list-style: none;
-    	padding: 0;
     	li {
     		&:before {
     			font-family: "blogicon";
 					content: "\f02d";
     			color: @text;
     			font-size: .5em;
+    			margin-left: -16px;
     			margin-right: 8px;
     			vertical-align: text-top;
     		}
@@ -429,13 +429,13 @@ ul, ol {
     
     ol {
     	list-style: none;
-    	padding: 0;
     	counter-reset: li;
     	li {
     		&:before {
     	  	content: counter(li);
     	  	counter-increment: li;
     			color: @text;
+    			margin-left: -16px;
     			margin-right: 8px;
     		}
     		ol {

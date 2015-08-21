@@ -793,13 +793,13 @@ ol {
 }
 .entry-content ul {
   list-style: none;
-  padding: 0;
 }
 .entry-content ul li:before {
   font-family: "blogicon";
   content: "\f02d";
   color: #454545;
   font-size: .5em;
+  margin-left: -16px;
   margin-right: 8px;
   vertical-align: text-top;
 }
@@ -811,13 +811,13 @@ ol {
 }
 .entry-content ol {
   list-style: none;
-  padding: 0;
   counter-reset: li;
 }
 .entry-content ol li:before {
   content: counter(li);
   counter-increment: li;
   color: #454545;
+  margin-left: -16px;
   margin-right: 8px;
 }
 .entry-content ol li ol {
